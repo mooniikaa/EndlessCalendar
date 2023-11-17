@@ -6,10 +6,6 @@ public class Calendar {
         System.out.println("Day Month Year");
         int day = scan.nextInt(); int month = scan.nextInt(); int year = scan.nextInt();
         String exception = (month + " month don`t have " + day + " days.");
-        if (month == 2){
-            exception = "February in years that are devided by 4 have 29 days, " +
-                    "in other years have 28 days";
-        }
         int nulls = 0; int jan; int feb = 0; int mar; int apr; int may; int jun; int jul;
         int aug; int sep; int oct; int nov; int dec;
         int february;
@@ -82,8 +78,8 @@ public class Calendar {
             }
         }
 
-        if (month == 2 && year % 4 == 1 && day > 28 || month == 2 && year % 4 == 0 && day > 29 || month == 4
-                && day > 30 || month == 6 && day > 30 || month == 9 && day > 30 || month == 11 && day > 30)
+        if (month == 2 && day > 29 || month == 4 && day > 30 || month == 6 && day > 30 || month == 9 && day > 30 || 
+            month == 11 && day > 30)
             {
                 System.out.println(exception);
             }

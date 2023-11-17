@@ -82,7 +82,7 @@ public class Calendar {
             }
         }
 
-        if (month == 2 & year % 4 == 1 & day > 28 || month == 2 & year % 4 == 0 & day > 29 || month == 4
+        if (month == 2 && year % 4 == 1 && day > 28 || month == 2 && year % 4 == 0 && day > 29 || month == 4
                 && day > 30 || month == 6 && day > 30 || month == 9 && day > 30 || month == 11 && day > 30)
             {
                 System.out.println(exception);

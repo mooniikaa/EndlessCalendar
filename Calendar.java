@@ -14,7 +14,7 @@ public class Calendar {
         int aug; int sep; int oct; int nov; int dec;
         int february;
         for (int b = 1; b <= year; b++){
-            if (year % 4 == 0){
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
                 feb = 29;
             }
             else{
